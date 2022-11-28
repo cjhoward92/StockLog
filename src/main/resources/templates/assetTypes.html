@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Stock Log - Asset Types</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <h1>Asset Types</h1>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+        </tr>
+        <tr th:each="assetType : ${assetTypes}">
+            <td th:text="${assetType.Id}">Id</td>
+            <td th:text="${assetType.Name}">Name</td>
+        </tr>
+    </table>
+</body>
+</html>

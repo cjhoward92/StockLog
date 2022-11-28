@@ -1,0 +1,21 @@
+# Use postgres/example user/password credentials
+# Run both at the same time with docker compose up
+version: '3.1'
+
+services:
+
+  # use "docker stack deploy db" to run
+  db:
+    image: postgres
+    restart: always
+    ports:
+      - 15432:5432
+    environment:
+      POSTGRES_PASSWORD: devpassword
+
+  # use "docker stack deploy web" to run
+  web:
+    image: adminer
+    restart: always
+    ports:
+      - 18080:8080
