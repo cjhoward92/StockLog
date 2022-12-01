@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Stock Log - User</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <h1 th:text="${name} ?: 'Oops! We couldn\'t find you!'"></h1>
+    <div th:if="${found}">
+        <span><strong>Username:</strong> <span th:text="${username}"></span></span>
+        <br/>
+        <span><strong>Created At:</strong> <span th:text="${createdAt.toString()}"></span></span>
+    </div>
+</body>
+</html>

@@ -17,7 +17,7 @@ public class AssetTypesController {
 
     private final AssetTypeMapper assetTypeMapper;
 
-    public AssetTypesController(AssetTypeMapper assetTypeMapper) {
+    public AssetTypesController(final AssetTypeMapper assetTypeMapper) {
         this.assetTypeMapper = assetTypeMapper;
     }
 

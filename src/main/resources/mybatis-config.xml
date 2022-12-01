@@ -6,4 +6,8 @@
     <mappers>
         <mapper resource="com/stocklog/stocklog/data/AssetTypeMapper.xml"/>
     </mappers>
+    <settings>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <setting name="logImpl" value="LOG4J2"/>
+    </settings>
 </configuration>
